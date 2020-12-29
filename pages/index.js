@@ -10,56 +10,36 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className={styles.header}>
+          <img src='/logo.svg' />
+        </div>
+        <div className={styles.content}>
+          <div className={styles.imageWrapper}>
+            <img src='/illustration-mockups.svg' />
+          </div>
+          <div className={styles.copyText}>
+            <div className={styles.heading}>
+              <h1>Build The Community</h1>
+              <h1>Your Fans Will Love</h1>
+            </div>
+            <p>Huddle re-immagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion</p>
+            <button>
+              <span>Register</span>
+            </button>
+          </div>
+        </div>
+        <div className={styles.footer}>
+          <span className={styles.socialIcon}>
+            <i className="fab fa-instagram"></i>
+          </span>
+          <span className={styles.socialIcon}>
+            <i className="fab fa-twitter"></i>
+          </span>
+          <span className={styles.socialIcon}>
+            <i className="fab fa-facebook-f"></i>
+          </span>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
   )
 }
